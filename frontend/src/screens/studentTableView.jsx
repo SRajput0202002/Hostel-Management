@@ -16,7 +16,7 @@ const StudentsTableView = ({ keyword, pageNumber }) => {
     if (!students) {
       dispatch(listStudents(keyword, pageNumber));
     }
-  }, [dispatch, keyword, pageNumber]);
+  }, [dispatch, keyword, pageNumber, students]);
   return (
     <>
       {loading ? (
